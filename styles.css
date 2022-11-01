@@ -1,0 +1,36 @@
+ul {
+    list-style: none;
+}
+
+#track li,
+#electives li {
+    margin: 10px 0;
+}
+
+.proceed {
+    margin: 50px 40% 0 40%;
+    box-shadow: 0 0 20px #eee;
+    font-weight: 700;
+    background-image: linear-gradient(45deg, #09009f, #00ff95 80%);
+    color: white;
+}
+
+.navbar-brand {
+    background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: visibility;
+}
+
+a {
+    text-decoration: none;
+}

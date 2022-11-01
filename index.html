@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathfinder</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.ico">
+    <!-- Bootstrap library -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Regular Css -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Library -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&display=swap" rel="stylesheet">
+    <!-- Animation library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+    <!-- Nav Bar -->
+    <nav id="navigation" class="navbar navbar-dark navbar-expand-lg bg-dark px-5">
+        <section class="container">
+            <div>
+                <!-- Brand Name -->
+                <a class="navbar-brand" href="#">PathFinder</a>
+
+                <!-- Hamburger menu -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <!-- Menu list items -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- ms-auto only worked on the unordered list by adding space to its starting point -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Tutorial</a>
+                    </li>
+
+                    <!-- Dropdown Contact -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Contact
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">mail</a></li>
+                            <li><a class="dropdown-item" href="#">linkedin</a></li>
+                            <li><a class="dropdown-item" href="#">instagram</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <button>dark mode</button>
+        </section>
+    </nav>
+
+    <!-- main body -->
+    <section class="container">
+        <main class="row container mt-5 bg-white">
+            <section id="track" class="col-3 text-white bg-dark py-5">
+                <div class="ms-2">
+                    <h3>COURSE</h3>
+                    <p>select your course</p>
+                </div>
+
+                <hr>
+
+                <ul>
+                    <li><input type="radio" name="course" id="science" checked>
+                        <label for="science">General Science</label>
+                    </li>
+
+                    <li> <input type="radio" name="course" id="gart">
+                        <label for="gart">General Art</label>
+                    </li>
+
+                    <li><input type="radio" name="course" id="business">
+                        <label for="business">Business</label>
+                    </li>
+
+                    <li><input type="radio" name="course" id="hecons">
+                        <label for="hecons">Home Economics</label>
+                    </li>
+
+
+                    <li><input type="radio" name="course" id="vart">
+                        <label for="vart">Visual Arts</label>
+                    </li>
+                </ul>
+
+            </section>
+
+            <section id="electives" class="col-9 py-5 ps-5">
+
+
+
+                <div>
+                    <h3>ELECTIVES FOR <span class>SCIENCE</span></h3>
+                    <p>select your elective courses</p>
+                </div>
+                <hr>
+                <!-- On check, add the class selected and use it for the jS aspect-->
+                <!-- SCIENCE -->
+                <div class="science show">
+                    <ul>
+                        <li><input type="checkbox" name="biology" id="biology">
+                            <label for="">Biology</label>
+                        </li>
+
+                        <li><input type="checkbox" name="chemistry" id="chemistry">
+                            <label for="">Chemistry</label>
+                        </li>
+
+                        <li><input type="checkbox" name="emath" id="emath">
+                            <label for="">Elective Mathematics</label>
+                        </li>
+
+                        <li><input type="checkbox" name="csci" id="csci">
+                            <label for="">Computer Science</label>
+                        </li>
+
+                        <li><input type="checkbox" name="geo" id="geo">
+                            <label for="">Geography</label>
+                        </li>
+
+                        <li><input type="checkbox" name="physics" id="physics">
+                            <label for="">Physics</label>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- GART -->
+                <div class="gart hide">
+                    <ul>
+                        <li><input type="checkbox" name="lit" id="lit">
+                            <label for="">Literature in English</label>
+                        </li>
+
+                        <li><input type="checkbox" name="french" id="french">
+                            <label for="">French</label>
+                        </li>
+
+                        <li><input type="checkbox" name="econs" id="econs">
+                            <label for="">Economics</label>
+                        </li>
+
+                        <li><input type="checkbox" name="geo" id="geo">
+                            <label for="">Geography</label>
+                        </li>
+
+                        <li><input type="checkbox" name="hist" id="hist">
+                            <label for="">History</label>
+                        </li>
+
+                        <li><input type="checkbox" name="gov" id="gov">
+                            <label for="">Government</label>
+                        </li>
+
+                        <li><input type="checkbox" name="rel" id="rel">
+                            <label for="">Religious Studies</label>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!--BUSINESS-->
+                <div class="business hide">
+                    <ul>
+                        <li><input type="checkbox" name="lit" id="lit">
+                            <label for="">Accounting</label>
+                        </li>
+
+                        <li><input type="checkbox" name="french" id="french">
+                            <label for="">Business Management</label>
+                        </li>
+
+                        <li><input type="checkbox" name="econs" id="econs">
+                            <label for="">Economics</label>
+                        </li>
+
+                        <li><input type="checkbox" name="geo" id="geo">
+                            <label for="">Principle of Costing</label>
+                        </li>
+
+                        <li><input type="checkbox" name="hist" id="hist">
+                            <label for="">Elective Mathematics</label>
+                        </li>
+
+                        <li><input type="checkbox" name="gov" id="gov">
+                            <label for="">French</label>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+
+                <!-- HOME ECONS -->
+                <div class="hecons hide">
+                    <ul>
+                        <li><input type="checkbox" name="lit" id="lit">
+                            <label for="">Management in Living</label>
+                        </li>
+
+                        <li><input type="checkbox" name="french" id="french">
+                            <label for="">Food and Nutrition</label>
+                        </li>
+
+                        <li><input type="checkbox" name="econs" id="econs">
+                            <label for="">General Knowledge in Arts</label>
+                        </li>
+
+                        <li><input type="checkbox" name="geo" id="geo">
+                            <label for="">Textile</label>
+                        </li>
+
+                        <li><input type="checkbox" name="hist" id="hist">
+                            <label for="">Economics</label>
+                        </li>
+
+                        <li><input type="checkbox" name="gov" id="gov">
+                            <label for="">French</label>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+
+                <!-- VART -->
+                <div class="vart hide">
+                    <ul>
+                        <li><input type="checkbox" name="lit" id="lit">
+                            <label for="">General Knowledge in Arts</label>
+                        </li>
+
+                        <li><input type="checkbox" name="french" id="french">
+                            <label for="">Textile</label>
+                        </li>
+
+                        <li><input type="checkbox" name="econs" id="econs">
+                            <label for="">Graphic Design</label>
+                        </li>
+
+                        <li><input type="checkbox" name="geo" id="geo">
+                            <label for="">Literature in English</label>
+                        </li>
+
+                        <li><input type="checkbox" name="hist" id="hist">
+                            <label for="">French</label>
+                        </li>
+
+                        <li><input type="checkbox" name="gov" id="gov">
+                            <label for="">Economics</label>
+                        </li>
+
+                        <li><input type="checkbox" name="rel" id="rel">
+                            <label for="">Basketry</label>
+                        </li>
+
+                        <li><input type="checkbox" name="geo" id="geo">
+                            <label for="">Leatherwork</label>
+                        </li>
+
+                        <li><input type="checkbox" name="hist" id="hist">
+                            <label for="">Picture Making</label>
+                        </li>
+
+                        <li><input type="checkbox" name="gov" id="gov">
+                            <label for="">Ceramics</label>
+                        </li>
+
+                        <li><input type="checkbox" name="rel" id="rel">
+                            <label for="">Sculpture</label>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <button type="submit" class="proceed btn btn-info px-5 fw-b py-2">Proceed</button>
+            </section>
+        </main>
+    </section>
+
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <!-- Regular JS -->
+    <script src="index.js"></script>
+</body>
+
+</html>
